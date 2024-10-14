@@ -29,11 +29,12 @@ function createCalculator() {
                     this.calculateResult();
                 }
 
-            }.bind(this)); //My this is the calculator and not the document
+            }.bind(this));
         },
 
         btnToDisplay(value) {
             this.calculatorDisplay.value += value;
+            this.calculatorDisplay.focus();
         },
 
         clearDisplay() {
